@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { Button } from './components/Button'
+import { Lightbulb } from './components/Lightbulb'
 
 function App() {
   return (
-    <Button/>
+    <Lightbulb/>
   );
 }
 
