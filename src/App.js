@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { Lightbulb } from './components/Lightbulb'
+import { Appreact } from './components2/appreact'
 
 function App() {
   return (
-    <Lightbulb/>
+    <Appreact/>
   );
 }
 
