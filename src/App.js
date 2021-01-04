@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import { Appreact } from './components2/appreact'
+import React from 'react'
+import '../assets2/appreact.css'
+const front = 'https://upload.wikimedia.org/wikipedia/vi/thumb/f/f7/Sugimoris025.png/220px-Sugimoris025.png'
+export function Appreact(props) {
 
-function App() {
-  return (
-    <Appreact/>
-  );
+    return (
+        <div className="card-area " >
+            <img className="card-image"
+                src={props.front}
+                flip={props.isFlip}
+                alt="pikachu" />
+            <h4>{props.name}</h4>
+
+        </div >
+    )
 }
-
-export default App;
