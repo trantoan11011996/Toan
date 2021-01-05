@@ -9,7 +9,7 @@ class Lightbulb extends React.Component {
         }
     }
     switch () {
-        if(this.state.isOn==true){
+        if(this.state.isOn===true){
             this.setState({isOn:false})   //thay đổi trạng thái view bên màn hình hiển thị (state : trạng thái)
         }
         else{
@@ -20,7 +20,7 @@ class Lightbulb extends React.Component {
     render() {   // hiển thị
         return (
             <div className="container">
-                <img src={this.state.isOn == true ?"on.jpg":"off.jpg"}  alt="bulb" className="image"/>
+                <img src={this.state.isOn === true ?"on.jpg":"off.jpg"}  alt="bulb" className="image"/>
     
                 <input type="button" value="switch"  onClick={()=>this.switch()}></input>
             </div>
