@@ -1,11 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Lightbulb } from './components/Lightbulb'
+import React, {Component} from 'react'
 
-function App() {
-  return (
-    <Lightbulb/>
-  );
+
+class App extends Component {
+  render(){
+    return (
+      
+      <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">Title</a>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+        </ul>
+      </nav>
+      
+    )
+  }
 }
-
-export default App;
+export default App
