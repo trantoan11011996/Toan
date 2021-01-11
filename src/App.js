@@ -1,10 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import { Lightbulb } from './components/Lightbulb'
+import { Header } from './components/Header'
+import { SearchBar } from './components/SearchBar'
+import {EmojiList} from './components/EmojiList'
 
 function App() {
+
   return (
-    <Lightbulb/>
+    <div className='App'>
+      <Header />
+      <SearchBar />
+      <EmojiList />
+    </div>
   );
 }
 
