@@ -1,0 +1,14 @@
+.header-cont{
+    border:1px solid black;
+    width: 70%;
+    height: 200px;
+    margin-left: 15%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+img{
+    height: 60px;
+    padding-left: 100px;
+}
+
