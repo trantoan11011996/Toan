@@ -4,7 +4,7 @@ function Emoji(props){
     const {symbol,title} = props   /////// props.symbol == symbol
     return (
         <div className='emoji-cont'>
-                {symbol} {title}         
+                {symbol} {title}       
         </div>
     )
 }
