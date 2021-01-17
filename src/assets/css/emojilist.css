@@ -1,0 +1,15 @@
+.emojilist{
+    width: 60%;
+    height: 500px;
+    border : 1px solid black;
+    margin-top : 10px;
+    margin-left: 450px;
+    padding-right: 1000px;
+    overflow: scroll;
+ 
+}
+.emoji{
+    /* border:red 2px solid; */
+    width: 200px;
+    padding-right: 60px;
+}
