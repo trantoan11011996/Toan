@@ -1,41 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { Header } from './Components/Header'
-import { SearchBar } from './Components/Searchbar';
-import { ShowBook } from './Components/Showbook';
-import { Book } from './Components/book';
-import { Main } from './Components/Main';
-import { Component } from 'react';
+import { Lightbulb } from './components/Lightbulb'
 
-
-class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {}
-    console.log('this: ',this.state)
-  }
-  Search = (event) =>{
-    if (event.key == 'Enter'){
-      fetch(`https://www.googleapis.com/books/v1/volumes?q=${event.target.value}`)
-      .then(res => res.json())
-      .then(data =>{
-        console.log('data : ', data.items)
-      
-        this.setState({books:data.items})
-        
-      })
-    }
-  }
-  
-  render(){
+function App() {
   return (
-    <div>
-    <Header/>
-    <SearchBar search={this.Search}/>
-    <Main books={this.state.books?this.state.books:[]}/>
-    </div>
+    <Lightbulb/>
   );
-  }
 }
 
 export default App;
