@@ -12,6 +12,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {}
+    console.log('this: ',this.state)
   }
   Search = (event) =>{
     if (event.key == 'Enter'){
@@ -19,7 +20,9 @@ class App extends Component {
       .then(res => res.json())
       .then(data =>{
         console.log('data : ', data.items)
-        this.setState({books : data.items})
+      
+        this.setState({books:data.items})
+        
       })
     }
   }
@@ -27,6 +30,7 @@ class App extends Component {
   render(){
   return (
     <div>
+    <Header/>
     <SearchBar search={this.Search}/>
     <Main books={this.state.books?this.state.books:[]}/>
     </div>
