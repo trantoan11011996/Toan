@@ -1,0 +1,14 @@
+.boxshow{
+    border:1px black solid;
+    overflow: scroll;
+    width: 60%;
+    height: 400px;
+    margin-left: 300px;
+    margin-top: 10px;
+
+}
+.emoji{
+    width: 100%;
+    /* border:1px black solid; */
+    padding-left: 10px;
+}
