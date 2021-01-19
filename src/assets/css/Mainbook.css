@@ -1,0 +1,27 @@
+.mainbook{
+    border : 1px solid black;
+    height: 350px;
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px ;
+    margin-top:20px ;
+}
+.image{
+    height: 100%;
+    width:  55%;
+    /* border:solid black 1px; */
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.content{
+    margin-left: 10px;
+    padding-top:100px;
+    text-align: center;
+    /* border:1px black solid; */
+    height: 100%;
+    width: 40%;
+    font-size: 20px;
+}
