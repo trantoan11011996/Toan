@@ -22,6 +22,7 @@ function Emojilist(props){
             <Emoji{...listemo[i]}/>
         )
     }
+    console.log('listemo: ',listemo)
     console.log('list: ',list)
     return(
         <div className='boxshow'>
