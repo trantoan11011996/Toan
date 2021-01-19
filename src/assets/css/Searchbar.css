@@ -1,0 +1,16 @@
+.searchbar{
+    border:1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+.input{
+    width: 200px;
+    cursor: pointer;
+    outline: none;
+    transition: width .35s ease-in-out; 
+}
+.input:focus{
+    width: 40%;
+}
