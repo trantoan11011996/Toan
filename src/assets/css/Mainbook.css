@@ -7,6 +7,10 @@
     margin-left: 40px ;
     margin-top:20px ;
 }
+.booklist{
+    display: flex;
+    flex-direction: row;
+}
 .image{
     height: 100%;
     width:  55%;

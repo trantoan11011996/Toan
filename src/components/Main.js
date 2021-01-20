@@ -1,19 +1,10 @@
 import '../assets/css/Main.css';
-import {Mainbook} from '../components/Mainbook'
+import {Booklist} from '../components/Booklist'
 
 function Main(props){
     return(
         <div className='main'>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
-            <Mainbook/>
+            <Booklist books ={props.books}/>
         </div>
     )
 }
